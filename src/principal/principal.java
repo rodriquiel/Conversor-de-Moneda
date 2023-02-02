@@ -63,9 +63,15 @@ public class principal {
             }
 			
 			switch(opciones) {
-        	case "Conversor de Moneda": monedas.convertirMonedas(listaMonedas,Minput);
+        	case "Conversor de Moneda":{
+        		monedas.convertirMonedas(listaMonedas,Minput);
+        		break;
+        	}
        
-        	case "Conversor de Temperatura": temperaturas.convertirTemperatura(listaTemps, Minput);
+        	case "Conversor de Temperatura":{
+        		temperaturas.convertirTemperatura(listaTemps, Minput);
+        		break;
+        	}
                 
 			}
 			
