@@ -7,8 +7,7 @@ import javax.swing.JOptionPane;
 import utlilidades.utilString;
 
 public class functionTemperaturas implements utilString {
-	convertirACelsius conversorAC = new convertirACelsius();
-	convertirDesdeCelsius conversorDesdeC = new convertirDesdeCelsius();
+	ConversorTemp conversorTemp = new ConversorTemp();
 	
 	public void convertirTemperatura(ArrayList<Temperaturas> temperaturas, double input ) {
 		String op = JOptionPane.showInputDialog(null, //Componenete Principal
@@ -33,7 +32,7 @@ public class functionTemperaturas implements utilString {
 					tempSeleccionada = temperaturas.get(i);
 				} 
 			}
-			conversorDesdeC.conversionDesdeC(tempSeleccionada, input);
+			conversorTemp.conversionDesdeC(tempSeleccionada, input);
 		} else {
 			op = firstNChars(op, 6);
 			for(int i=0; i < temperaturas.size(); i++) {
@@ -41,7 +40,7 @@ public class functionTemperaturas implements utilString {
 					tempSeleccionada = temperaturas.get(i);
 				} 
 			}
-			conversorAC.conversionAC(tempSeleccionada, input);
+			conversorTemp.conversionAC(tempSeleccionada, input);
 		}
 		
 	}

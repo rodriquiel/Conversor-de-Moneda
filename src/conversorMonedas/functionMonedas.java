@@ -8,8 +8,7 @@ import utlilidades.utilString;
 
 public class functionMonedas implements utilString {
 	
-	convertirAPeso conversorAPeso = new convertirAPeso();
-	convertirDesdePeso conversorDesdePeso = new convertirDesdePeso();
+	ConversorMoneda conversorMoneda = new ConversorMoneda();
 	
 	public void convertirMonedas(ArrayList<Monedas> monedas, double input) {
 		String op = JOptionPane.showInputDialog(null, //Componenete Principal
@@ -41,7 +40,7 @@ public class functionMonedas implements utilString {
 					monedaSeleccionada = monedas.get(i);
 				} 
 			}
-			conversorDesdePeso.conversionDesdePeso(monedaSeleccionada,input);
+			conversorMoneda.conversionDesdePeso(monedaSeleccionada,input);
 		} else {
 			op = firstNChars(op, 3);
 			for(int i=0; i < monedas.size(); i++) {
@@ -49,7 +48,7 @@ public class functionMonedas implements utilString {
 					monedaSeleccionada = monedas.get(i);
 				} 
 			}
-			conversorAPeso.conversionAPeso(monedaSeleccionada, input);
+			conversorMoneda.conversionAPeso(monedaSeleccionada, input);
 		}
 		
 	}

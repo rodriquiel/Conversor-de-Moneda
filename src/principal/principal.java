@@ -2,26 +2,24 @@ package principal;
 
 import java.util.ArrayList;
 
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 import ConversorTemperatura.Temperaturas;
 import ConversorTemperatura.functionTemperaturas;
 import conversorMonedas.Monedas;
 import conversorMonedas.functionMonedas;
+import utlilidades.ValidarNumero;
 
 public class principal {
 	
-	public static boolean ValidarNumero(String input) {
-        try {
-            double x = Double.parseDouble(input);
-            if(x >= 0 || x < 0);
-                return true;
-            } catch (NumberFormatException e) {
-                return false;
-            }
-    }
+	public class principalFrame extends JFrame{
+		
+	}
+	
 
 	public static void main(String[] args) {
+		ValidarNumero validador = new ValidarNumero();
 		functionMonedas monedas = new functionMonedas();
 		functionTemperaturas temperaturas = new functionTemperaturas();
 		
@@ -58,7 +56,7 @@ public class principal {
 			String input;
 			double Minput = 0;
 			input = JOptionPane.showInputDialog("Ingresa el valor que deseas convertir: ");
-			if(ValidarNumero(input) == true) {
+			if(validador.validar(input) == true) {
                  Minput = Double.parseDouble(input);
             }
 			
