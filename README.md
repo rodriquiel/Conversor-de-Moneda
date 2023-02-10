@@ -5,14 +5,11 @@ El conversor consta de un menu inicial donde se selecciona el tipo de conversion
 
 En en ultimo update, se mejoró la interfaz grafica utilizando la libreria java.swing mediante WindowBuilder en Eclipse y se realizó una revision general del codigo para evitar repeticiones innecesarias y mejoras en la sintaxis.
 
-![1](https://user-images.githubusercontent.com/111917955/216229483-0d428256-f143-4dad-9ae3-1d78105f38cf.png)
 
-![2](https://user-images.githubusercontent.com/111917955/216229510-53957e34-96f5-4c4c-b8ed-14560a7969d1.png)
+![MenuPrincipal](https://user-images.githubusercontent.com/111917955/217974327-5d310bc2-bd10-48ac-ac0d-1e6f14c17b41.png)
 
-![3](https://user-images.githubusercontent.com/111917955/216229524-23ae9752-fa23-4493-a864-7c25b67b465f.png)
+![MenuMoneda](https://user-images.githubusercontent.com/111917955/217974349-f13d30c9-d495-4897-bd74-3f660ee526b0.png)
 
-![4](https://user-images.githubusercontent.com/111917955/216229540-d833fba0-571c-4ab2-b067-458132ffbf3e.png)
+![MenuTemperatura](https://user-images.githubusercontent.com/111917955/217974361-e255a815-c0d0-41bb-a6f0-69c752a1c574.png)
 
-![5](https://user-images.githubusercontent.com/111917955/216229564-c8c17017-5c77-4c0a-ac02-49acf45bcd65.png)
-
-
+![MenuResultado](https://user-images.githubusercontent.com/111917955/217974368-050ebe4c-4b70-4109-9d40-26bc0144e643.png)
