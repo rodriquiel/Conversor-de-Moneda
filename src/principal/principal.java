@@ -6,22 +6,23 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 import ConversorTemperatura.Temperaturas;
-import ConversorTemperatura.functionTemperaturas;
+import ConversorTemperatura.FunctionTemperaturas;
 import conversorMonedas.Monedas;
-import conversorMonedas.functionMonedas;
+import conversorMonedas.FunctionMonedas;
 import utlilidades.ValidarNumero;
+import views.PantallaPrincipal;
 
 public class principal {
 	
-	public class principalFrame extends JFrame{
-		
-	}
 	
 
 	public static void main(String[] args) {
-		ValidarNumero validador = new ValidarNumero();
-		functionMonedas monedas = new functionMonedas();
-		functionTemperaturas temperaturas = new functionTemperaturas();
+		
+		PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
+		pantallaPrincipal.setVisible(true);
+		/*ValidarNumero validador = new ValidarNumero();
+		FunctionMonedas monedas = new FunctionMonedas();
+		FunctionTemperaturas temperaturas = new FunctionTemperaturas();
 		
 		ArrayList<Monedas> listaMonedas = new ArrayList<>();
 		listaMonedas.add(new Monedas("USD",300.0));
@@ -80,7 +81,7 @@ public class principal {
             } 
 			
 		} while(opciones != "Cancelar");
-			
+			*/
 	}
 			
 }

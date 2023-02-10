@@ -3,7 +3,7 @@ package ConversorTemperatura;
 import javax.swing.JOptionPane;
 
 public class ConversorTemp {
-	public void conversionDesdeC(Temperaturas temp, double valor) {
+	public String conversionDesdeC(Temperaturas temp, double valor) {
 		double factor = temp.getFactor();
 		double resultado;
 		if (temp.getNombre() .equals("Kelvin")){
@@ -13,10 +13,10 @@ public class ConversorTemp {
 		}
 		
 		resultado = (double) Math.round(resultado*100)/100;
-		JOptionPane.showMessageDialog(null,"La equivalencia es " + resultado + "°" + temp.getNombre().charAt(0));
+		return("La equivalencia es " + resultado + "°" + temp.getNombre().charAt(0));
 	}
 	
-	public void conversionAC(Temperaturas temp, double valor) {
+	public String conversionAC(Temperaturas temp, double valor) {
 		double factor = temp.getFactor();
 		double resultado;
 		
@@ -26,6 +26,6 @@ public class ConversorTemp {
 			resultado = (valor - 32) * factor;		
 		}
 		resultado = (double) Math.round(resultado*100)/100;
-		JOptionPane.showMessageDialog(null,"La equivalencia es " + resultado + "°C");
+		return("La equivalencia es " + resultado + "°C");
 	}
 }
